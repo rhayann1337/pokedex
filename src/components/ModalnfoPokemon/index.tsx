@@ -1,6 +1,6 @@
 import * as S from "./style";
 import CharzizardSVG from "../../assets/Charizard.svg";
-import { ImodalInfoPokemonInterface } from "./interfaces/modalInfoPokemonInterface";
+import { IModalInfoPokemon } from "./interfaces/modalInfoPokemonInterface";
 
 export function ModalInfoPokemon({
   // imgSrc,
@@ -18,7 +18,7 @@ export function ModalInfoPokemon({
   // attack,
   // spAttack,
   // spDefense,
-}: ImodalInfoPokemonInterface) {
+}: IModalInfoPokemon) {
   return (
     <S.ContainerModal>
       <section>

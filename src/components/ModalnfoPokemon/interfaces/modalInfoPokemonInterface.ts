@@ -1,4 +1,4 @@
-export interface ImodalInfoPokemonInterface {
+export interface IModalInfoPokemon{
     imgSrc?: string
     firtCategory?: string
     secondCategory?: string
