@@ -14,8 +14,8 @@ import BannerComplete from "../../assets/bannerComplete.svg";
 import { isMobile } from "react-device-detect";
 
 export const Home: React.FC = () => {
-  console.log("Home");
   return (
+    <>
     <Container>
       <Header />
       <Content>
@@ -40,5 +40,6 @@ export const Home: React.FC = () => {
         </Image>
       </Content>
     </Container>
+    </>
   );
 };
