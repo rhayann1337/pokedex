@@ -1,17 +1,17 @@
+import { isMobile } from "react-device-detect";
+import Banner from "../../assets/banner.svg";
+import BannerComplete from "../../assets/bannerComplete.svg";
+import { Header } from "../../components";
+import { ButtonComponent } from "../../components/Button";
 import {
-  Button,
   Container,
   ContainerButton,
   Content,
   Image,
   Subtitle,
   Texts,
-  Title,
+  Title
 } from "./style";
-import { Header } from "../../components";
-import Banner from "../../assets/banner.svg";
-import BannerComplete from "../../assets/bannerComplete.svg";
-import { isMobile } from "react-device-detect";
 
 export const Home: React.FC = () => {
   return (
@@ -28,10 +28,9 @@ export const Home: React.FC = () => {
               You can know the type of Pokemon, its strengths, disadvantages and
               abilities
             </Subtitle>
-            <ContainerButton className="ContainerButton">
-              <Button>
-                <span>See pokemons</span>
-              </Button>
+              <ContainerButton className="ContainerButton">
+                {/* Botão componentizado pra nao precisar estar fazendo dois estilos pra botao no projeto */}
+                <ButtonComponent color="#73d677" text="See pokemons" whidth={15} />
             </ContainerButton>
           </div>
         </Texts>

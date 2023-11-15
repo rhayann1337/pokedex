@@ -1,10 +1,12 @@
 import "./App.css";
-import { Home } from "./pages";
+import { NotFound } from "./pages/NotFound";
 
 function App() {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <NotFound />
+
     </>
   );
 }
