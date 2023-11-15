@@ -1,7 +1,7 @@
+import { Header } from "../../components/Header/Header";
 import { isMobile } from "react-device-detect";
 import Banner from "../../assets/banner.svg";
 import BannerComplete from "../../assets/bannerComplete.svg";
-import { Header } from "../../components";
 import { ButtonComponent } from "../../components/Button";
 import {
   Container,
@@ -13,7 +13,7 @@ import {
   Title
 } from "./style";
 
-export const Home: React.FC = () => {
+export function Home() {
   return (
     <>
     <Container>
