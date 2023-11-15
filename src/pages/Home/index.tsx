@@ -8,12 +8,12 @@ import {
   Texts,
   Title,
 } from "./style";
-import { Header } from "../../components";
 import Banner from "../../assets/banner.svg";
 import BannerComplete from "../../assets/bannerComplete.svg";
 import { isMobile } from "react-device-detect";
+import { Header } from "../../components/Header/Header";
 
-export const Home: React.FC = () => {
+export function Home() {
   return (
     <>
     <Container>
