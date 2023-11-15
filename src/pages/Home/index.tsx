@@ -1,4 +1,3 @@
-import { Header } from "../../components/Header/Header";
 import { isMobile } from "react-device-detect";
 import Banner from "../../assets/banner.svg";
 import BannerComplete from "../../assets/bannerComplete.svg";
@@ -17,7 +16,6 @@ export function Home() {
   return (
     <>
     <Container>
-      <Header />
       <Content>
         <Texts className="Texts">
           <div>
