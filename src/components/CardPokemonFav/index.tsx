@@ -1,9 +1,10 @@
 import image from '../../assets/CardBoxImg.svg';
-import { CardContainer } from "./style";
+import { SlugComponent } from './components/slug';
+import * as S from "./style";
 
 export function CardComponent() {
   return (
-    <CardContainer>
+    <S.CardContainer>
       
       <section>
         <header>
@@ -34,11 +35,16 @@ export function CardComponent() {
           
         </article>
 
+        <footer>
+          <SlugComponent colors='#73D677' slug='Grass' />
+          <SlugComponent colors='#07D6F2' slug='Poison' />
+        </footer>
+
       </section>
 
       <figure>
         <img src={image} alt="" />
       </figure>
-    </CardContainer>
+    </S.CardContainer>
   );
 }

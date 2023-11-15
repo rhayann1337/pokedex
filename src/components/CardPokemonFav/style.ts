@@ -24,7 +24,21 @@ export const CardContainer = styled.main`
 
     gap: 1rem;
 
-    /* background-color: yellow; */
+    position: relative;
+
+    > footer {
+      display: flex;
+      flex-direction: row;
+
+      width: 100%;
+
+      gap: 0.5rem;
+
+      position: absolute;
+      
+      left: 2rem;
+      bottom: 1rem;
+    }
 
     header {
       display: flex;
@@ -73,10 +87,12 @@ export const CardContainer = styled.main`
           border-radius: 50%;
           border: 4px solid #212121;
 
-          padding: .5rem;
+          padding: 1rem;
 
           span {
+            font-weight: 600;
             font-size: .75rem;
+
             color: #212121;
           }
         }
@@ -89,7 +105,6 @@ export const CardContainer = styled.main`
 
         font-family: Karla;
         font-size: 1rem;
-        font-style: normal;
 
         font-weight: 400;
       }
@@ -110,4 +125,9 @@ export const CardContainer = styled.main`
       object-fit: cover;
     }
   }
+
+  -webkit-user-select:none;  
+  -moz-user-select:none;     
+  -ms-user-select:none;      
+  user-select:none;  
 `;
