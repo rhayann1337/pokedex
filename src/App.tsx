@@ -1,11 +1,9 @@
 import "./App.css";
-import { Home } from "./pages/Home/index";
+import { RoutesProvider } from "./Routes/@router";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <RoutesProvider />
   );
 }
 

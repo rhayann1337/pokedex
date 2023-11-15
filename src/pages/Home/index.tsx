@@ -30,7 +30,7 @@ export function Home() {
             </Subtitle>
               <ContainerButton className="ContainerButton">
                 {/* Botão componentizado pra nao precisar estar fazendo dois estilos pra botao no projeto */}
-                <ButtonComponent color="#73d677" text="See pokemons" whidth={15} />
+                <ButtonComponent color="#73d677" text="See pokemons" width={15} />
             </ContainerButton>
           </div>
         </Texts>
