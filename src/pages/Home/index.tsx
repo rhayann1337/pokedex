@@ -11,8 +11,12 @@ import {
   Texts,
   Title
 } from "./style";
+import { useNavigate } from "react-router-dom"
 
 export function Home() {
+
+  const navigate = useNavigate()
+
   return (
     <>
     <Container>
@@ -28,7 +32,7 @@ export function Home() {
             </Subtitle>
               <ContainerButton className="ContainerButton">
                 {/* Botão componentizado pra nao precisar estar fazendo dois estilos pra botao no projeto */}
-                <ButtonComponent color="#73d677" text="See pokemons" width={15} />
+                <ButtonComponent color="#73d677" text="See pokemons" width={15} onClick={() => navigate("/favorite")}/>
             </ContainerButton>
           </div>
         </Texts>
